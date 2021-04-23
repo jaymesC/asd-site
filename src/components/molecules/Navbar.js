@@ -13,7 +13,7 @@ export default function Navbar() {
   text-align: right;
   `
   const Navlinks = styled.a`
-  // display: inline-block;
+  display: inline-block;
   margin-left: 50px;
   font-weight: 400;
   padding-bottom: 0px;
