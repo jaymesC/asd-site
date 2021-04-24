@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import "normalize.css"
+import Button from '../atoms/Button'
 
 export default function Navbar() {
   const Navbar = styled.nav`
@@ -28,14 +29,13 @@ export default function Navbar() {
     <div>
       <Navbar>
       <img src="logo.JPG" alt=""/>
-      <Links> 
-      <Navlinks></Navlinks>
-      
+      <Links>
         <Navlinks to="/">Benefits</Navlinks>
         <Navlinks to="/about">Goals</Navlinks>
         <Navlinks to="/projects"> Membership</Navlinks>
         <Navlinks to="/projects"> Blog</Navlinks>
         <Navlinks to="/projects"> Team</Navlinks>
+        <Navlinks to="/projects"> <Button></Button></Navlinks>
       </Links>
     </Navbar>
     </div>
