@@ -16,26 +16,26 @@ export default function Navbar() {
   const Navlinks = styled.a`
   display: inline-block;
   margin-left: 50px;
-  // font-weight: 200;
   margin-top: 20px;
   border-bottom: 3px solid transparent;
   font-size: 22px;
   cursor:pointer;
+  font-family:Tahoma;
+  color:rgb(128, 122, 122);
   
   `
   return (
     <div>
       <Navbar>
       <img src="logo.JPG" alt=""/>
-      <Links>
-      
+      <Links> 
       <Navlinks></Navlinks>
       
-        <Navlinks to="/">Home</Navlinks>
-        <Navlinks to="/about">About</Navlinks>
-        <Navlinks to="/projects"> Projects</Navlinks>
-        <Navlinks to="/projects"> Projects</Navlinks>
-        <Navlinks to="/projects"> Projects</Navlinks>
+        <Navlinks to="/">Benefits</Navlinks>
+        <Navlinks to="/about">Goals</Navlinks>
+        <Navlinks to="/projects"> Membership</Navlinks>
+        <Navlinks to="/projects"> Blog</Navlinks>
+        <Navlinks to="/projects"> Team</Navlinks>
       </Links>
     </Navbar>
     </div>
