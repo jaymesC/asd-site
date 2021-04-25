@@ -26,17 +26,17 @@ export default function Navbar() {
   
   `
   const Button = styled.button`
-  background-color:#d12e1a;
+  background-color:#ea5646;
   color:#fff;
   width:200px;
   padding-top:16px;
   padding-bottom:16px;
   border-radius:30px;
-  border: #d12e1a;
+  border: #ed6050;
   cursor:pointer;
   font-size:14px;
-  
   `
+
   return (
     <div>
       <Navbar>
