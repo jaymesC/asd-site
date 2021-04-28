@@ -10,6 +10,7 @@ export default function Navbar() {
   display: flex;
   justify-content:center;
   margin: 50px auto;
+  position: sticky;
   `
   const Links = styled.div`
   display: inline-block;
@@ -26,11 +27,11 @@ export default function Navbar() {
   
   `
   const Button = styled.button`
-  background-color:#ea5646;
+  background-color:#e64b38;
   color:#fff;
   width:200px;
-  padding-top:16px;
-  padding-bottom:16px;
+  padding-top:20px;
+  padding-bottom:20px;
   border-radius:30px;
   border: #ed6050;
   cursor:pointer;
@@ -38,7 +39,7 @@ export default function Navbar() {
   `
 
   return (
-    <div>
+    
       <Navbar>
       <img src="logo.JPG" alt=""/>
       <Links>
@@ -50,6 +51,5 @@ export default function Navbar() {
         <Navlinks to="/projects"> <Button><FaLock /> MEMBERS LOGIN</Button></Navlinks>
       </Links>
     </Navbar>
-    </div>
   )
 }
