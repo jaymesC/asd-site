@@ -14,7 +14,7 @@ export default function Section2() {
   `
 
   const SectionB = styled.section`
-  padding-bottom:400px ;
+  padding-bottom:200px ;
   `
   const H1 =  styled.h1`
   font-weight:580;

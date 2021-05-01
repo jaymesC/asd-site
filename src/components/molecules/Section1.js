@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 // ..
 AOS.init({
-  duration: 900
+  duration: 700
 }
  
 );
@@ -165,10 +165,10 @@ DEVELOPING SPORTING DIRECTORS</H5>
       <h1 style={{paddingLeft:'80px', paddingTop:'-10px'}}>Trusted by global brands <br/> within the sport sector.</h1>
       </Brand>
       <BrandLogo>
-        <img src="hudl.png" alt="" style={{paddingRight:'40px'}}/>
-        <img src="shoosmith.png" alt="" style={{paddingRight:'40px'}}/>
-        <img src="sri.png" alt="" style={{paddingRight:'40px'}}/>
-        <img src="dawbell.png" alt=""/>
+        <img src="hudl.png" alt="" style={{paddingRight:'40px'}} data-aos="fade"/>
+        <img src="shoosmith.png" alt="" style={{paddingRight:'40px'}} data-aos="fade"/>
+        <img src="sri.png" alt="" style={{paddingRight:'40px'}} data-aos="fade"/>
+        <img src="dawbell.png" alt="" data-aos="fade" />
       </BrandLogo>
       </Wrapper>
     </div>
