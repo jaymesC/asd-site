@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init({
-  duration: 4000
+  
 }
  
 );
@@ -16,7 +16,7 @@ export default function Section3() {
   padding-top: 10rem;
   background-color:#f1f5f6;
   margin-left: 4rem;
-  padding-bottom:200px;
+  padding-bottom:20px;
   color:#323033;
   `
   const News =  styled.section`
@@ -52,16 +52,66 @@ margin-top: 1.8rem;
   border: #ed6050;
   cursor:pointer;
   font-size:14px;
+  font-weight:700;
   `
 
   const Photos = styled.section`
+  margin-top:5rem;
   margin-left:5rem;
   display:flex;
   justify-content:space-between;
   margin-right: 6rem;
   `
 
+  const Wrapper = styled.div`
+  background-color:#442562;
+  padding-left: 10rem;
+  font-family:'inter';
+  color:#fff;
+  `
+
+  const Subscribe = styled.section`
+  display:flex;
+  padding-top:3rem;
+  `
+
+  const Input = styled.section`
+  display:flex;
+  /* padding-bottom:10rem; */
+  justify-content:space-between;
+  margin-right: 13rem;
+  `
+
+  const Email =  styled.input`
+  margin-top:20px;
+  padding:22px 140px 22px 20px;
+  background-color:#2E1748;
+  &:focus {
+    outline:none;
+    border:none;
+  }
+  color:#fff;
+  border:none;
+
+  
+  `
+
+  const Signup = styled(Button)`
+  margin-top: 1.3rem;
+  width:150px;
+  color:#442562;
+  background-color:#fff;
+  transition:0.5s;
+  &:hover {
+      background-color: #d12e1a;
+      color:#fff;
+    }
+ 
+
+  `
+
   return (
+    <>
     <Container>
       <News>
         <h5>LATEST NEWS</h5>
@@ -77,11 +127,25 @@ margin-top: 1.8rem;
       </Member>
 
       <Photos>
-        <img src="footerpic1.JPG" alt="" data-aos="fade-up"/>
-        <img src="footerpic2.JPG" alt="" data-aos="fade-up"/>
-        <img src="footerpic3.JPG" alt="" data-aos="fade-up"/>
-      </Photos>
-      
+        <img src="footerpic1.JPG" alt="" data-aos="slide-up" data-aos-duration="4000"/>
+        <img src="footerpic2.JPG" alt="" data-aos="slide-up" data-aos-duration="000"/>
+        <img src="footerpic3.JPG" alt="" data-aos="fade-up" data-aos-duration="000"/>
+      </Photos> 
     </Container>
+
+      <Wrapper>
+    <Subscribe>
+      <h5>ASSOCIATION OF SPORTING DIRECTORS NEWSLETTER</h5>
+      <div><img src="icon.JPG" alt="" style={{paddingLeft:'11rem', paddingTop:'14px'}}/></div>
+    </Subscribe>
+    <Input>
+    <h2>Subscribe to our newsletters to <br/> not miss our latest news</h2>
+    <div><Email type="text" placeholder="Email Address" placeholderTextColor='white'/></div>
+    <div><Signup>SIGNUP</Signup></div>
+    </Input>
+    </Wrapper>
+
+    
+    </>
   )
 }

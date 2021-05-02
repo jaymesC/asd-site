@@ -28,6 +28,7 @@ export default function Navbar() {
   `
   const Button = styled.button`
   background-color:#e64b38;
+  transition:0.5s;
   &:hover {
       background-color: #d12e1a;
     }
