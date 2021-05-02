@@ -16,8 +16,9 @@ export default function Section3() {
   padding-top: 10rem;
   background-color:#f1f5f6;
   margin-left: 4rem;
-  padding-bottom:20px;
+  padding-bottom:10rem;
   color:#323033;
+  
   `
   const News =  styled.section`
   margin-left:5rem;
@@ -64,6 +65,7 @@ margin-top: 1.8rem;
   `
 
   const Wrapper = styled.div`
+  border-top: 4px solid #72C1AD;
   background-color:#442562;
   padding-left: 10rem;
   font-family:'inter';
@@ -73,6 +75,7 @@ margin-top: 1.8rem;
   const Subscribe = styled.section`
   display:flex;
   padding-top:3rem;
+  
   `
 
   const Input = styled.section`
@@ -80,6 +83,7 @@ margin-top: 1.8rem;
   /* padding-bottom:10rem; */
   justify-content:space-between;
   margin-right: 13rem;
+  padding-bottom:3rem;
   `
 
   const Email =  styled.input`

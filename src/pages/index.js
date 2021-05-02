@@ -6,6 +6,7 @@ import Section2 from "../components/molecules/Section2"
 import Attribute from "../components/molecules/Attribute"
 import Attribute2 from "../components/molecules/Attribute2"
 import Section3 from "../components/molecules/Section3"
+import Footer from "../components/molecules/Footer"
 
 export default function Home() {
   return (
@@ -55,6 +56,7 @@ export default function Home() {
     color='#e64b38'
       />
     <Section3 /> 
+    <Footer />
     </>
   )
 }
