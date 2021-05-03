@@ -1,5 +1,7 @@
 import React from "react"
 import "normalize.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from "../components/molecules/Navbar"
 import Section1 from "../components/molecules/Section1"
 import Section2 from "../components/molecules/Section2"
@@ -7,6 +9,12 @@ import Attribute from "../components/molecules/Attribute"
 import Attribute2 from "../components/molecules/Attribute2"
 import Section3 from "../components/molecules/Section3"
 import Footer from "../components/molecules/Footer"
+
+AOS.init({
+  duration: 700
+}
+ 
+);
 
 export default function Home() {
   return (
