@@ -40,7 +40,7 @@ export default function Footer() {
   `
 
   const P = styled.p`
-  font-size:14px;
+  font-size:16px;
   `
 
   const Img = styled.img`

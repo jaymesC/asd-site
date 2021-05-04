@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import "normalize.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Button from '../atoms/Button'
 
 // ..
 AOS.init({
@@ -224,9 +225,9 @@ DEVELOPING SPORTING DIRECTORS</H5>
       </CSection>
       
       <BSection>
-      <Button>
-        MORE ABOUT OUR BENEFITS
-      </Button>
+      <Button >MORE ABOUT OUR BENEFITS</Button>
+        
+      
       </BSection>
       <Brand>
       <h4>OUR PARTNERS</h4>
