@@ -1,17 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import "normalize.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+AOS.init();
 
-AOS.init({
-  duration: 900
-}
- 
-);
 
 export default function Attribute({writeup1,writeup2,writeup3, img, color}) {
+
 
   const Row = styled.div`
   margin-left: 14rem;
@@ -77,6 +74,22 @@ font-size:16px;
 font-weight:400;
 line-height:30px;
   `
+
+let AOS;
+
+useEffect(() => {
+
+  const AOS = require("aos");
+  AOS.init({
+    once: true,
+  });
+}, []);
+
+useEffect(() => {
+  if (AOS) {
+    AOS.refresh();
+  }
+});
 
 
 

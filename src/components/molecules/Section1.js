@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 // import Sticky from 'react-sticky-el';
 import "normalize.css"
@@ -6,15 +6,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Button from '../atoms/Button'
 
-// ..
 AOS.init({
-  duration: 700
-}
- 
-);
+  duration:900
+});
+
 
 
 export default function Section1() {
+
 
   const Div = styled.div`
   display:flex;
@@ -39,16 +38,7 @@ export default function Section1() {
   font-family:'inter';
   color:rgb(50, 48, 51);
   `
-  const H2 = styled.h2`
-  padding-right:10rem;
-  margin-top: 6rem;
-  /* text-decoration:underline; */
-  font-size:18px;
-  letter-spacing:2px;
-  cursor: pointer;
-  font-family:'inter';
-  color:rgb(50, 48, 51);
-  `
+  
   const H5 = styled.h5`
   margin-top:30px;
   font-size:16px;
@@ -184,8 +174,23 @@ const H4 = styled.h4`
 font-family:'inter';
 font-size:16px;
 font-weight:600;
-
 `
+
+let AOS;
+
+useEffect(() => {
+  
+  const AOS = require("aos");
+  AOS.init({
+    once: true,
+  });
+}, []);
+
+useEffect(() => {
+  if (AOS) {
+    AOS.refresh();
+  }
+});
 
 
 
@@ -219,8 +224,8 @@ DEVELOPING SPORTING DIRECTORS</H5>
         <Message>Our membership network <br/> provides pioneering <br/> Sporting Directors with the <br/> opportunity to connect <br/> with other leaders in the <br/> global football industry.</Message> 
       </WriteUp>
       <PicSection >
-        <Img1 src="card1.JPG" alt="" data-aos="fade-up "/> 
-        <img src="card44.JPG" alt="" data-aos="fade-up"/>
+        <Img1 src="card1.JPG" alt="" data-aos="fade-up"/> 
+        <img src="card44.JPG" alt="" data-aos="slide-up"/>
       </PicSection>
       </CSection>
       

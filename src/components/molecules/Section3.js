@@ -1,16 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import "normalize.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 AOS.init({
-  
-}
- 
-);
+  duration:900
+});
+
+
 
 export default function Section3() {
+  
+
   const Container =  styled.div`
   font-family:'inter';
   padding-top: 10rem;
@@ -110,9 +112,23 @@ margin-top: 1.8rem;
       background-color: #d12e1a;
       color:#fff;
     }
- 
-
   `
+
+let AOS;
+
+useEffect(() => {
+  
+  const AOS = require("aos");
+  AOS.init({
+    once: true,
+  });
+}, []);
+
+useEffect(() => {
+  if (AOS) {
+    AOS.refresh();
+  }
+});
 
   return (
     <>
@@ -131,9 +147,9 @@ margin-top: 1.8rem;
       </Member>
 
       <Photos>
-        <img src="footerpic1.JPG" alt="" data-aos="slide-up" data-aos-duration="4000"/>
-        <img src="footerpic2.JPG" alt="" data-aos="slide-up" data-aos-duration="000"/>
-        <img src="footerpic3.JPG" alt="" data-aos="fade-up" data-aos-duration="000"/>
+        <img src="footerpic1.JPG" alt="" data-aos="slide-up" data-aos-duration="000"/>
+        <img src="footerpic2.JPG" alt="" data-aos="slide-up" />
+        <img src="footerpic3.JPG" alt="" data-aos="fade-up" />
       </Photos> 
     </Container>
 

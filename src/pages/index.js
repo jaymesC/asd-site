@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import "normalize.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,12 +11,28 @@ import Section3 from "../components/molecules/Section3"
 import Footer from "../components/molecules/Footer"
 
 AOS.init({
-  duration: 700
-}
- 
-);
+  duration:900
+});
+
+
 
 export default function Home() {
+  let AOS;
+
+useEffect(() => {
+  
+  const AOS = require("aos");
+  AOS.init({
+    once: true,
+  });
+}, []);
+
+useEffect(() => {
+  if (AOS) {
+    AOS.refresh();
+  }
+});
+
   return (
     <>
       <Navbar />

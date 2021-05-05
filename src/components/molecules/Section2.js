@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import "normalize.css"
+import AOS from 'aos'
 import 'aos/dist/aos.css';
 
+AOS.init({
+  duration:900
+});
+
 export default function Section2() {
+
+ 
 
   const SectionA = styled.section`
   /* margin-left:18rem; */
@@ -42,6 +49,22 @@ export default function Section2() {
   const Column1 = styled.div`
   /* padding-right:100px; */
   `
+
+let AOS;
+
+useEffect(() => {
+ 
+  const AOS = require("aos");
+  AOS.init({
+    once: true,
+  });
+}, []);
+
+useEffect(() => {
+  if (AOS) {
+    AOS.refresh();
+  }
+});
 
 
   return (
