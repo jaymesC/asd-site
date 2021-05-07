@@ -4,9 +4,6 @@ import "normalize.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init({
-  duration:900
-});
 
 
 
@@ -44,6 +41,7 @@ export default function Section3() {
 const Button = styled.button`
 margin-top: 1.8rem;
   background-color:#e64b38;
+  transition:0.7s;
   &:hover {
       background-color: #d12e1a;
     }
@@ -121,6 +119,7 @@ useEffect(() => {
   const AOS = require("aos");
   AOS.init({
     once: true,
+    duration: 1000,
   });
 }, []);
 
@@ -147,9 +146,9 @@ useEffect(() => {
       </Member>
 
       <Photos>
-        <img src="footerpic1.JPG" alt="" data-aos="slide-up" data-aos-duration="000"/>
-        <img src="footerpic2.JPG" alt="" data-aos="slide-up" />
-        <img src="footerpic3.JPG" alt="" data-aos="fade-up" />
+        <img src="footerpic1.JPG" alt="" data-aos="slide-up" data-aos-duration="1200"/>
+        <img src="footerpic2.JPG" alt="" data-aos="slide-up" data-aos-duration="1800"/>
+        <img src="footerpic3.JPG" alt="" data-aos="slide-up" data-aos-duration="2200"/>
       </Photos> 
     </Container>
 

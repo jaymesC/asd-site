@@ -4,9 +4,6 @@ import "normalize.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
-AOS.init({
-  duration:900
-});
 
 export default function Section2() {
 
@@ -57,6 +54,7 @@ useEffect(() => {
   const AOS = require("aos");
   AOS.init({
     once: true,
+    duration: 900,
   });
 }, []);
 

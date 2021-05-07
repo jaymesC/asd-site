@@ -1,6 +1,5 @@
 import React, {useEffect} from "react"
 import "normalize.css"
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from "../components/molecules/Navbar"
 import Section1 from "../components/molecules/Section1"
@@ -10,13 +9,12 @@ import Attribute2 from "../components/molecules/Attribute2"
 import Section3 from "../components/molecules/Section3"
 import Footer from "../components/molecules/Footer"
 
-AOS.init({
-  duration:900
-});
+
 
 
 
 export default function Home() {
+
   let AOS;
 
 useEffect(() => {
@@ -24,6 +22,7 @@ useEffect(() => {
   const AOS = require("aos");
   AOS.init({
     once: true,
+    duration: 900,
   });
 }, []);
 

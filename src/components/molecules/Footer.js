@@ -10,7 +10,7 @@ export default function Footer() {
     padding-top: 5rem;
     color: rgb(79, 84, 90);
     padding-left: 5rem;
-    padding-right: 5rem;
+    padding-right: 0rem;
   `
 
   const Links = styled.section`

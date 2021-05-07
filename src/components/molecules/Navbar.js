@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import "normalize.css"
 import { FaLock } from 'react-icons/fa';
+import Button from '../atoms/NavButton'
 
 
 export default function Navbar() {
@@ -26,21 +27,7 @@ export default function Navbar() {
   color:rgb(128, 122, 122);
   
   `
-  const Button = styled.button`
-  background-color:#e64b38;
-  transition:0.5s;
-  &:hover {
-      background-color: #d12e1a;
-    }
-  color:#fff;
-  width:200px;
-  padding-top:20px;
-  padding-bottom:20px;
-  border-radius:30px;
-  border: #ed6050;
-  cursor:pointer;
-  font-size:14px;
-  `
+
 
   return (
     

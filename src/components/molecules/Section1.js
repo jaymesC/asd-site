@@ -6,9 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Button from '../atoms/Button'
 
-AOS.init({
-  duration:900
-});
+
 
 
 
@@ -102,23 +100,23 @@ export default function Section1() {
   
   `
 
-const Button = styled.button`
-background-color:#e64b38;
-transition:0.5s;
-&:hover {
-      background-color: #d12e1a;
-    }
-color:#fff;
-width:350px;
-padding-top:22px;
-padding-bottom:22px;
-border-radius:30px;
-border: #ed6050;
-cursor:pointer;
-font-family:'inter';
-font-size:16px;
-font-weight:500;
-`
+// const Button = styled.button`
+// background-color:#e64b38;
+// transition:0.5s;
+// &:hover {
+//       background-color: #d12e1a;
+//     }
+// color:#fff;
+// width:350px;
+// padding-top:22px;
+// padding-bottom:22px;
+// border-radius:30px;
+// border: #ed6050;
+// cursor:pointer;
+// font-family:'inter';
+// font-size:16px;
+// font-weight:500;
+// `
 
 const Brand = styled.section`
 margin-left: 7rem;
@@ -183,6 +181,7 @@ useEffect(() => {
   const AOS = require("aos");
   AOS.init({
     once: true,
+    duration: 1000,
   });
 }, []);
 
@@ -224,8 +223,8 @@ DEVELOPING SPORTING DIRECTORS</H5>
         <Message>Our membership network <br/> provides pioneering <br/> Sporting Directors with the <br/> opportunity to connect <br/> with other leaders in the <br/> global football industry.</Message> 
       </WriteUp>
       <PicSection >
-        <Img1 src="card1.JPG" alt="" data-aos="fade-up"/> 
-        <img src="card44.JPG" alt="" data-aos="slide-up"/>
+        <Img1 src="card1.JPG" alt="" data-aos="slide-up" data-aos-duration="2400"/> 
+        <img src="card44.JPG" alt="" data-aos="slide-up" data-aos-duration="3000"/>
       </PicSection>
       </CSection>
       
@@ -240,10 +239,10 @@ DEVELOPING SPORTING DIRECTORS</H5>
       <h1 style={{paddingLeft:'80px', paddingTop:'-10px'}}>Trusted by global brands <br/> within the sport sector.</h1>
       </Brand>
       <BrandLogo>
-        <img src="hudl.png" alt="" style={{paddingRight:'40px'}} data-aos="fade"/>
-        <img src="shoosmith.png" alt="" style={{paddingRight:'40px'}} data-aos="fade"/>
-        <img src="sri.png" alt="" style={{paddingRight:'40px'}} data-aos="fade"/>
-        <img src="dawbell.png" alt="" data-aos="fade" />
+        <img src="hudl.png" alt="" style={{paddingRight:'40px'}} data-aos="fade" data-aos-duration="900"/>
+        <img src="shoosmith.png" alt="" style={{paddingRight:'40px'}} data-aos="fade" data-aos-duration="1400"/>
+        <img src="sri.png" alt="" style={{paddingRight:'40px'}} data-aos="fade" data-aos-duration="1800"/>
+        <img src="dawbell.png" alt="" data-aos="fade" data-aos-duration="2200"/>
       </BrandLogo>
       </Wrapper>
     </>
