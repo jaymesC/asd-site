@@ -13,12 +13,12 @@ const Footer = () => {
     padding-right: 0rem;
   `;
 
-  const Links = styled.section`
+  const StyledLinks = styled.section`
     /* display:flex;
      justify-content:space-between; */
   `;
 
-  const NavLink = styled.section`
+  const StyledNavLink = styled.section`
     display: flex;
     justify-content: space-between;
     font-family: Inter, sans-serif;
@@ -28,65 +28,67 @@ const Footer = () => {
     margin-left: 3rem;
   `;
 
-  const H5 = styled.h5`
-    padding-right: 6rem;
+  const StyledH5 = styled.h5`
+    padding-right: 6.2rem;
+    font-weight:400;
   `;
 
-  const Location = styled.div`
+  const StyledLocation = styled.div`
     padding-bottom: 100px;
     display: flex;
     justify-content: space-between;
     margin-left: 3rem;
   `;
 
-  const P = styled.p`
-    font-size: 16px;
+  const StyledP = styled.p`
+    font-size: 14px;
   `;
 
-  const Img = styled.img`
+  const StyledImg = styled.img`
     margin-top: 1rem;
+    padding-left: 3.6rem;
   `;
 
   return (
     <StyledFooter>
       <div>
-        <Img src="footerLogo.JPG" alt="" />
+        <StyledImg src="footerLogo.JPG" alt="" />
       </div>
-      <Links>
-        <NavLink>
-          <H5>Benefits</H5>
-          <H5>Goals </H5>
-          <H5>Membership</H5>
-          <H5>Team </H5>
-          <H5>Blog</H5>
+      <StyledLinks>
+        <StyledNavLink>
+          <StyledH5>Benefits</StyledH5>
+          <StyledH5>Goals </StyledH5>
+          <StyledH5>Membership</StyledH5>
+          <StyledH5>Team </StyledH5>
+          <StyledH5>Blog</StyledH5>
           <h5>Membership Enquiry </h5>
-        </NavLink>
+        </StyledNavLink>
 
-        <Location>
+        <StyledLocation>
           <div>
             <h5>OFFICE</h5>
-            <P>
+            <StyledP>
               Suite 9, Rockfield House, 512 Darwen Road,
               <br /> Bromley Cross, Bolton, Lancashire, BL7 9DX
-            </P>
+            </StyledP>
           </div>
           <div>
             <h5>LEGAL</h5>
-            <P>
+            <StyledP>
               {' '}
               This site is protected by Google reCAPTCHA. Privacy Policy.
               <br />
               © Association of Sporting Directors. 2005 – 2020. All Rights
               <br /> Reserved.
-            </P>
+            </StyledP>
           </div>
           <div>
             <h5>FOLLOW US</h5>
             <img src="twitter.JPG" alt="" style={{ paddingRight: '10px' }} />
             <img src="linkedin.JPG" alt="" />
           </div>
-        </Location>
-      </Links>
+        </StyledLocation>
+      </StyledLinks>
     </StyledFooter>
   );
 };

@@ -21,8 +21,8 @@ export default function Navbar() {
   `;
   const Navlinks = styled.a`
     display: inline-block;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 68px;
+    margin-top: 6px;
     border-bottom: 3px solid transparent;
     font-size: 18px;
     cursor: pointer;
@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <Navbar>
-      <img src="logo.JPG" alt="" />
+      <div><img src="logo.JPG" alt="" /></div>
       <Links>
         <Navlinks to="/">Benefits</Navlinks>
         <Navlinks to="/about">Goals</Navlinks>

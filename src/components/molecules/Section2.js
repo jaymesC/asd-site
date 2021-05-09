@@ -35,7 +35,7 @@ export default function Section2() {
     line-height: 30px;
   `;
 
-  const Row = styled.section`
+  const StyledRow = styled.section`
     margin-top: 10rem;
     margin-left: 15rem;
     display: flex;
@@ -64,7 +64,7 @@ export default function Section2() {
 
   return (
     <>
-      <Row>
+      <StyledRow>
         <Column1>
           <SectionA>
             <h3>OURGOALS</h3>
@@ -85,7 +85,7 @@ export default function Section2() {
             directors work in a simpler, smarter way.
           </Text>
         </SectionB>
-      </Row>
+      </StyledRow>
     </>
   );
 }

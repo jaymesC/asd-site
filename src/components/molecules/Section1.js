@@ -17,7 +17,7 @@ export default function Section1() {
   `;
 
   const Section = styled.section`
-    padding-left: 9rem;
+    padding-left: 6.2rem;
     margin-top: 6rem;
   `;
   const Section2 = styled.section`
@@ -38,6 +38,7 @@ export default function Section1() {
     font-size: 16px;
     font-family: 'inter';
     color: rgb(50, 48, 51);
+    padding-left: 1.4rem;
   `;
   const Image1 = styled.img`
     width: 100%;
@@ -46,7 +47,6 @@ export default function Section1() {
 
   const Wrapper = styled.section`
     background-color: #442562;
-    /* padding-right: -20px; */
     padding-bottom: 15rem;
     border-radius: 75% 55% / 25% 6%;
     margin-bottom: 5rem;
@@ -55,8 +55,9 @@ export default function Section1() {
 
   const CSection = styled.section`
     display: flex;
+    padding-left: 0.68rem;
     background-color: #f1f5f6;
-    margin-right: 5px;
+    margin-right: 20px;
     font-family: 'inter';
     color: rgb(50, 48, 51);
   `;
@@ -64,7 +65,7 @@ export default function Section1() {
   const WriteUp = styled.section`
     padding-top: 8rem;
     margin-left: 5rem;
-    margin-right: 4.5rem;
+    margin-right: 3.0rem;
     font-family: 'inter';
     border-bottom-right-radius: 10px;
     color: rgb(50, 48, 51);
@@ -110,7 +111,7 @@ export default function Section1() {
   // `
 
   const Brand = styled.section`
-    margin-left: 7rem;
+    margin-left: 6rem;
     color: #fff;
     padding-top: 12rem;
     display: flex;
@@ -155,7 +156,7 @@ export default function Section1() {
     border-bottom: 4px solid #596c85;
     /* border-bottom-width:30px; */
     margin-bottom: 150px;
-    margin-right: 13.5rem;
+    margin-right: 7.5rem;
   `;
 
   const H4 = styled.h4`
