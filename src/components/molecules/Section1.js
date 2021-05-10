@@ -133,7 +133,7 @@ export default function Section1() {
 
   const Svg = styled.svg`
     width: 800px;
-    margin-left: 7rem;
+    /* margin-left: 1rem; */
     position: absolute;
 
     /* padding-top: -10rem; */

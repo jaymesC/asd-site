@@ -29,7 +29,7 @@ const Footer = () => {
   `;
 
   const StyledH5 = styled.h5`
-    padding-right: 6.2rem;
+    padding-right: 6.4rem;
     font-weight:400;
   `;
 
@@ -46,7 +46,7 @@ const Footer = () => {
 
   const StyledImg = styled.img`
     margin-top: 1rem;
-    padding-left: 3.6rem;
+    padding-left: 2.5rem;
   `;
 
   return (

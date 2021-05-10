@@ -10,6 +10,12 @@ import { StyledButton } from './styles';
  * @return {JSX.Element}
  * @constructor
  */
+
+/**
+ * 
+ * @param {*} props 
+ * @returns 
+ */
 const Button = (props) => {
   return (
     <div>

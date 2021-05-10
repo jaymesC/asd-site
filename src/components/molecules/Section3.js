@@ -8,31 +8,32 @@ const Section3 = () => {
     font-family: 'inter';
     padding-top: 10rem;
     background-color: #f1f5f6;
-    margin-left: 4rem;
+    margin-left: 6rem;
     padding-bottom: 10rem;
     color: #323033;
   `;
   const News = styled.section`
-    margin-left: 5rem;
+    margin-left: 3rem;
     display: flex;
     /* justify-content:space-evenly; */
   `;
 
   const Member = styled.section`
-    margin-left: 5rem;
+    margin-left: 3rem;
     display: flex;
     justify-content: space-between;
     margin-right: 6.4rem;
     margin-bottom: 30px;
   `;
 
-  const H2 = styled.h2`
+  const StyledH2 = styled.h2`
     font-size: 30px;
     font-weight: 600;
   `;
 
   const Button = styled.button`
     margin-top: 1.8rem;
+    margin-right: 1rem;
     background-color: #e64b38;
     transition: 0.7s;
     &:hover {
@@ -51,16 +52,16 @@ const Section3 = () => {
 
   const Photos = styled.section`
     margin-top: 5rem;
-    margin-left: 5rem;
+    margin-left: 2.3rem;
     display: flex;
     justify-content: space-between;
-    margin-right: 6rem;
+    margin-right: 7.3rem;
   `;
 
   const Wrapper = styled.div`
     border-top: 4px solid #72c1ad;
     background-color: #442562;
-    padding-left: 10rem;
+    padding-left: 8rem;
     font-family: 'inter';
     color: #fff;
   `;
@@ -74,12 +75,13 @@ const Section3 = () => {
     display: flex;
     /* padding-bottom:10rem; */
     justify-content: space-between;
-    margin-right: 13rem;
+    margin-right: 6.5rem;
     padding-bottom: 3rem;
   `;
 
   const Email = styled.input`
     margin-top: 20px;
+    margin-left: 5rem;
     padding: 22px 140px 22px 20px;
     background-color: #2e1748;
     &:focus {
@@ -92,6 +94,7 @@ const Section3 = () => {
 
   const Signup = styled(Button)`
     margin-top: 1.3rem;
+    /* margin-left:1rem; */
     width: 150px;
     color: #442562;
     background-color: #fff;
@@ -128,9 +131,9 @@ const Section3 = () => {
           </div>
         </News>
         <Member>
-          <H2>
+          <StyledH2>
             Become a member of ASD for unlimited <br /> access to all resources, articles and insights.
-          </H2>
+          </StyledH2>
           <div>
             <Button>MEMBERSHIP ENQUIRY</Button>
           </div>

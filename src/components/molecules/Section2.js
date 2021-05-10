@@ -20,12 +20,11 @@ export default function Section2() {
   const SectionB = styled.section`
     padding-bottom: 200px;
   `;
-  const H1 = styled.h1`
+  const StyledH1 = styled.h1`
     font-weight: 580;
     font-family: 'inter';
     color: rgb(50, 48, 51);
     font-size: 30px;
-    /* padding-right: 7rem; */
   `;
   const Text = styled.p`
     padding-top: 6rem;
@@ -42,9 +41,6 @@ export default function Section2() {
     color: rgb(50, 48, 51);
   `;
 
-  const Column1 = styled.div`
-    /* padding-right:100px; */
-  `;
 
   let AOS;
 
@@ -65,17 +61,17 @@ export default function Section2() {
   return (
     <>
       <StyledRow>
-        <Column1>
+        <div>
           <SectionA>
             <h3>OURGOALS</h3>
             <div>
               <img src="icon2.JPG" alt="" style={{ paddingLeft: '14rem', paddingTop: '11px' }} />
             </div>
           </SectionA>
-          <H1>
+          <StyledH1>
             Enabling the sport leaders <br /> to work in a simpler <br /> smarter way.
-          </H1>
-        </Column1>
+          </StyledH1>
+        </div>
         <SectionB>
           <Text>
             We work with sporting directors to help build a

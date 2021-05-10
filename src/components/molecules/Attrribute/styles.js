@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Row = styled.div`
+export const StyledRow = styled.div`
   margin-left: 14rem;
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,7 @@ export const Row = styled.div`
   margin-bottom: 60px;
 `;
 
-export const A = styled.div`
+export const StyledAnchor = styled.div`
   color: black;
   transition: 0.6s;
   &:hover {
@@ -18,7 +18,7 @@ export const A = styled.div`
   padding-right: 50px;
 `;
 
-export const Click = styled.section`
+export const StyledLink = styled.section`
   display: flex;
 
   cursor: pointer;
@@ -28,25 +28,25 @@ export const Click = styled.section`
   margin-right: 17rem;
 `;
 
-export const Svg = styled.svg`
+export const StyledSvg = styled.svg`
   width: 550px;
   position: absolute;
   /* padding-top: -15rem; */
 `;
 
-export const Picture = styled.img`
+export const StyledPicture = styled.img`
   padding-top: 74px;
   padding-left: 72px;
   width: 600px;
   position: relative;
   border-radius: 10px;
 `;
-export const H4 = styled.h4`
+export const StyledH4 = styled.h4`
   font-family: 'inter';
   font-size: 16px;
   font-weight: 600;
 `;
-export const H1 = styled.h1`
+export const StyledH1 = styled.h1`
   padding-top: 20px;
   font-family: 'inter';
   font-size: 65px;
@@ -54,7 +54,7 @@ export const H1 = styled.h1`
   line-height: 68px;
 `;
 
-export const Note = styled.p`
+export const StyledParagraph = styled.p`
   padding-right: 70px;
   font-family: 'inter';
   font-size: 16px;
