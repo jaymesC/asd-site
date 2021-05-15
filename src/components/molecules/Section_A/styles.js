@@ -55,7 +55,7 @@ import styled from 'styled-components';
     display: flex;
     padding-left: 0.68rem;
     background-color: #f1f5f6;
-    margin-right: 20px;
+    margin-right: 5px;
     font-family: 'inter';
     color: rgb(50, 48, 51);
   `;
@@ -73,7 +73,7 @@ import styled from 'styled-components';
     margin-top: -80px;
     position: relative;
     /* padding-bottom: 30px; */
-    /* padding-left:40px; */
+    /* padding-left:2px; */
   `;
 
   export const StyledBSection = styled.section`
@@ -89,6 +89,7 @@ import styled from 'styled-components';
   export const StyledImg1 = styled.img`
     margin-bottom: 90px;
     margin-right: 60px;
+    margin-left: 15px;
   `;
 
   export const StyledCounter = styled.section`
