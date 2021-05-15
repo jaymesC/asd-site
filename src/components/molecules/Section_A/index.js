@@ -33,7 +33,7 @@ import Button from '../../atoms/Button';
 
   // Add Button function
   const addHandler = () => {
-    if (count <=3)
+    if (count <=2)
       setCount(count +1)  
   }
 
