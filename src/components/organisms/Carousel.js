@@ -1,43 +1,39 @@
-import React, { Component } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from 'react';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
+
 
 /**
  * sweet carousel
  */
-export default class Carousel extends Component {
-  /**
-   * react render method
-   * @return {JSX.Element}
-   */
-  render() {
-    const settings = {
-      className: 'center',
-      centerMode: true,
-      infinite: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      speed: 500,
-    };
-    return (
-      <div>
-        <h2>Center Mode</h2>
-        <Slider {...settings}>
-          <div>
-            <img src="card.JPG" alt="" />
-          </div>
-          <div>
-            <img src="card.JPG" alt="" />
-          </div>
-          <div>
-            <img src="card.JPG" alt="" />
-          </div>
-          <div>
-            <img src="card.JPG" alt="" />
-          </div>
-        </Slider>
-      </div>
-    );
-  }
+
+export default function Carousel() {
+  return (
+    <>
+      <Splide
+        options={{
+          rewind: false,
+          width: 800,
+          gap: 'rem',
+          perPage: 3,
+        }}
+      >
+        <SplideSlide>
+          <img src="card1.JPG" alt=""  />
+        </SplideSlide>
+        <SplideSlide>
+          <img src="card44.JPG" alt="" />
+        </SplideSlide>
+        <SplideSlide>
+          <img src="card44.JPG" alt="" />
+        </SplideSlide>
+        <SplideSlide>
+          <img src="card44.JPG" alt="" />
+        </SplideSlide>
+        <SplideSlide>
+          <img src="card44.JPG" alt="" />
+        </SplideSlide>
+      </Splide>
+    </>
+  );
 }

@@ -1,53 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
 import 'normalize.css';
+import {StyledFooter, StyledLinks, StyledNavLink, StyledH5, StyledLocation,StyledP, StyledImg} from './styles'
+
+
+/**
+ * footer component
+ *
+ * @return {JSX.Element}
+ **/
 
 const Footer = () => {
-  const StyledFooter = styled.div`
-    display: flex;
-    /* justify-content:space-between; */
-    font-family: 'inter';
-    padding-top: 5rem;
-    color: rgb(79, 84, 90);
-    padding-left: 5rem;
-    padding-right: 0rem;
-  `;
-
-  const StyledLinks = styled.section`
-    /* display:flex;
-     justify-content:space-between; */
-  `;
-
-  const StyledNavLink = styled.section`
-    display: flex;
-    justify-content: space-between;
-    font-family: Inter, sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    border-bottom: 4px solid #555e7d;
-    margin-left: 3rem;
-  `;
-
-  const StyledH5 = styled.h5`
-    padding-right: 6.4rem;
-    font-weight:400;
-  `;
-
-  const StyledLocation = styled.div`
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 3rem;
-  `;
-
-  const StyledP = styled.p`
-    font-size: 14px;
-  `;
-
-  const StyledImg = styled.img`
-    margin-top: 1rem;
-    padding-left: 2.5rem;
-  `;
+ 
 
   return (
     <StyledFooter>

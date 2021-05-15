@@ -5,13 +5,13 @@ import { StyledAnchor, StyledLink, StyledH1, StyledH4, StyledPicture, StyledRow,
 import PropTypes from 'prop-types';
 
 /**
- * @description this component does blah blah blah
+ * @description this component shows the various values of the app
  *
  * @return {JSX.Element}
- * @constructor
+ *
  */
-const Attribute = ({ writeup1, writeup2, writeup3, img, color }) => {
-  // AOS is the animation package that handles the animations on the web page
+const Attribute = ({ FirstText, SecondText, ThirdText, img, color }) => {
+  // AOS is the animation package that handles the animations on the app
   let AOS;
 
   useEffect(() => {
@@ -33,10 +33,10 @@ const Attribute = ({ writeup1, writeup2, writeup3, img, color }) => {
     <>
       <StyledRow>
         <div data-aos="fade-left" data-aos-duration="1000">
-          <StyledH1>{writeup1}</StyledH1>
+          <StyledH1>{FirstText}</StyledH1>
           <StyledParagraph>
-            {writeup2} <br /> <br />
-            {writeup3}
+            {SecondText} <br /> <br />
+            {ThirdText}
           </StyledParagraph>
           <br />
           <StyledLink>
@@ -60,9 +60,9 @@ const Attribute = ({ writeup1, writeup2, writeup3, img, color }) => {
 };
 
 Attribute.propTypes = {
-  writeup1: PropTypes.string.isRequired,
-  writeup2: PropTypes.string.isRequired,
-  writeup3: PropTypes.string,
+  FirstText: PropTypes.string.isRequired,
+  SecondText: PropTypes.string.isRequired,
+  ThirdText: PropTypes.string,
   img: PropTypes.string,
   color: PropTypes.string,
 };
