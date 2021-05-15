@@ -31,6 +31,18 @@ import Button from '../../atoms/Button';
   /* Counter useState */
   const [count, setCount] = useState(1);
 
+  // Add Button function
+  const addHandler = () => {
+    if (count <=3)
+      setCount(count +1)  
+  }
+
+  // Subtraction Button function
+  const handler = () => {
+    if (count >=2)
+    setCount(count -1)   
+  }
+
   return (
     <>
       <StyledDiv>
@@ -69,8 +81,8 @@ import Button from '../../atoms/Button';
               Our membership network <br /> provides pioneering <br /> Sporting Directors with the <br /> opportunity to
               connect <br /> with other leaders in the <br /> global football industry.
               <StyledCounter>
-        <><img src="left.JPG" alt="" onClick={() => setCount(count - 1)} /></>
-        <><img src="right.JPG" alt="" onClick={() => setCount(count + 1)} style={{paddingLeft:'20px', paddingRight:'30px'}}/></>
+        <><img src="left.JPG" alt="" onClick={handler} /></>
+        <><img src="right.JPG" alt="" onClick={addHandler} style={{paddingLeft:'30px', paddingRight:'30px'}}/></>
         <p>{count} /4</p>
         </StyledCounter>
             </StyledMessage>
